@@ -40,15 +40,15 @@ const LogoComp = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="min-h-screen bg-[#DAA06D] text-white flex flex-col">
 
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center px-4 text-center">
         {/* Animated Logo */}
         <div className="mb-8 animate-float">
-          <div className="w-56 h-56 mt-12 mx-auto rounded-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center shadow-lg">
-<img src="/logo3.png" alt="ssss" />          </div>
+          <div className="w-56 h-56 mt-12 mx-auto rounded-full bg-none flex items-center justify-center shadow-lg">
+<img src="/logo4.png" alt="ssss" />          </div>
         </div>
         
         {/* Main Heading */}
@@ -63,14 +63,14 @@ const LogoComp = () => {
         </div>
         
         {/* Description */}
-        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-12 text-gray-300 animate-fade-in">
+        <p className="max-w-2xl mx-auto text-lg md:text-xl mb-12 text-white animate-fade-in">
 Po punojmë shumë për t'ju sjellë platformën më të mirë për blerjen dhe shitjen e pronave dhe veturave në Kosovë. Qëndroni të njoftuar për diçka të mrekullueshme!        </p>
         
    
         
         {/* Notify Form */}
         <div className="max-w-md w-full mx-auto mb-16 animate-slide-in">
-          <p className="text-lg mb-4 text-gray-300">Më njoftoni kur të lancohet!</p>
+          <p className="text-lg mb-4 text-white">Më njoftoni kur të lancohet!</p>
           <form onSubmit={handleSubmit} className="flex">
             <input 
               type="email" 
@@ -78,11 +78,11 @@ Po punojmë shumë për t'ju sjellë platformën më të mirë për blerjen dhe 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-grow px-4 py-3 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-white"
+              className="flex-grow px-4 py-3 rounded-l-lg bg-white text-white focus:outline-none focus:ring-2 focus:ring-white"
             />
             <button 
               type="submit"
-              className="bg-white text-black font-semibold px-6 py-3 rounded-r-lg hover:bg-gray-500 transition-colors duration-300 animate-pulse"
+              className="bg-white text-black font-semibold px-6 py-3 rounded-r-lg hover:bg-black hover:text-white transition-colors duration-300 animate-pulse"
             >
               Më njofto!
             </button>
@@ -93,7 +93,7 @@ Po punojmë shumë për t'ju sjellë platformën më të mirë për blerjen dhe 
       </main>
 
       {/* Footer */}
-      <footer className="py-6 text-center text-gray-500 text-sm animate-fade-in">
+      <footer className="py-6 text-center text-white text-sm animate-fade-in">
         <p>&copy; {new Date().getFullYear()} isellkosova.com. All rights reserved.</p>
       </footer>
     </div>
