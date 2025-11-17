@@ -27,7 +27,7 @@ function App() {
         <div className="App min-h-screen flex flex-col">
           <main className="flex-1">
             <Routes>
-              LogoComp
+              
     <Route path="/" element={<LogoComp />} />
 
             </Routes>
